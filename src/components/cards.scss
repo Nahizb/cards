@@ -1,0 +1,87 @@
+/* Estilo de la imagen dentro de la tarjeta */
+.card-img-top {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Recorta la imagen proporcionalmente */
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+}
+
+.card-img-top:hover {
+  transform: scale(1.8); /* Efecto de zoom al pasar el mouse */
+}
+
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+  transition: all 0.7s linear;
+}
+
+.card-body {
+  padding: 2rem 0 !important;
+  background-color: #383737; /* Fondo oscuro para el cuerpo de la tarjeta */
+  color: #fff; /* Asegúrate de que el texto dentro del cuerpo de la tarjeta también sea blanco */
+}
+
+/* Color blanco para el texto */
+.card-title,
+.card-text
+.paragraph {
+  color: #fff !important; /* Asegúrate de que el texto sea blanco con mayor especificidad */
+}
+
+.card-body p,
+.card-body a {
+  color: #fff; /* Asegura que todos los textos dentro de .card-body sean blancos */
+}
+
+
+/* Otras reglas para el cuerpo del texto */
+.card-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+/* Media query para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+  .card {
+    width: 80%; /* Reducir el tamaño de la tarjeta */
+    margin: 0.5rem; /* Reducir margen */
+  }
+
+  .card-img-top {
+    height: 160px; /* Imagen más pequeña */
+  }
+
+  .card-body {
+    padding: 1.5rem 0 !important; /* Reducir el padding */
+  }
+}
+
+/* Media query para pantallas de tamaño similar al iPhone 13 (menos de 420px de ancho) */
+@media (max-width: 420px) {
+  .card {
+    width: 100%; /* La tarjeta ocupa todo el ancho de la pantalla */
+    margin: 0.3rem; /* Margen más pequeño */
+  }
+
+  .card-img-top {
+    height: 150px; /* Hacer la imagen más pequeña */
+  }
+
+  .card-body {
+    padding: 1rem 0 !important; /* Reducir el padding */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Título más pequeño */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
+}
